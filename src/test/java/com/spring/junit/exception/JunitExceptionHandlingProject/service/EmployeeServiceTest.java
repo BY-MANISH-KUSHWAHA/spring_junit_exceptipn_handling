@@ -102,12 +102,11 @@ public class EmployeeServiceTest {
     @Test
     public void deleteEmployeeById_With_Verifier(){
         Employee emp_ = new Employee(2, "Driti", "dk9313", "1234567");
-
         service.removeEmployeeById(emp_.getId());
-
         verify(repository, times(1)).deleteById(emp_.getId());
 
     }
+
 
 
 }
